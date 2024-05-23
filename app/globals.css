@@ -1,9 +1,23 @@
 :root {
   --app-bg: #121212;
   --text-color: #ffffff;
+  --styled-text: #88BC27;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
 }
 
 body {
   background: var(--app-bg);
   color: var(--text-color);
+}
+
+span.colored-text {
+  color: var(--styled-text);
 }

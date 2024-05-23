@@ -1,4 +1,4 @@
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/ProjectCard/ProjectCard";
 import Project1 from "@/public/images/project1.jpg";
 
 export default function ResumePage() {

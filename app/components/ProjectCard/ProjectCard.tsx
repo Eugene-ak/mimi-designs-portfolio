@@ -1,4 +1,5 @@
 import Image, { StaticImageData } from "next/image";
+import StyledProjectCard from "./ProjectCard.style";
 
 export default function ProjectCard({
   image,
@@ -10,10 +11,10 @@ export default function ProjectCard({
   description: string;
 }) {
   return (
-    <div>
+    <StyledProjectCard>
       <Image src={image} alt="Project Thumbnail" />
       <h3>{title}</h3>
       <p>{description}</p>
-    </div>
+    </StyledProjectCard>
   );
 }

@@ -1,12 +1,19 @@
 import Image from "next/image";
 import AboutImage from "@/public/images/aboutImage.jpg";
+import Gradient from "@/public/images/about-gradient.png";
+import StyledAboutSection from "./HomeAbout.style";
+import Button from "@/app/components/Button/Button";
 
 export default function HomeAbout() {
   return (
-    <section>
+    <StyledAboutSection>
       <div>
-        <h1>About Me</h1>
-        <h2>About Me</h2>
+        <div>
+          <h1>About Me</h1>
+          <h2>
+            About <span className="colored-text">Me</span>
+          </h2>
+        </div>
         <p>
           As a creative professional with diverse skill set, I bring a unique
           blend of expertise in graphic design & UI/UX design. I create visually
@@ -15,10 +22,11 @@ export default function HomeAbout() {
           in team environments and I’m eager to contribute my creativity and
           expertise. Learn More
         </p>
+        <Button text="Learn More" />
       </div>
       <div>
         <Image src={AboutImage} alt="About" />
       </div>
-    </section>
+    </StyledAboutSection>
   );
 }
