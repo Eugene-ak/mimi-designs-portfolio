@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 0rem 2rem;
-  /* background: #292C36; */
+  background: #292C36;
   border-bottom: 1px solid white;
 `;
 

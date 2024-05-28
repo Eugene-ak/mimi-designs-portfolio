@@ -4,7 +4,7 @@ import Project2 from "@/public/images/project2.jpg";
 import Project3 from "@/public/images/project3.jpg";
 import Project4 from "@/public/images/project4.jpg";
 import StyledProjectSection from "./HomeProject.style";
-import Button from "@/app/components/Button/Button";
+import Button from "@/components/Button/Button";
 
 export default function HomeProjects() {
   return (

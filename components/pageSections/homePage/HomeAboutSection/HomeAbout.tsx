@@ -2,7 +2,7 @@ import Image from "next/image";
 import AboutImage from "@/public/images/aboutImage.jpg";
 import Gradient from "@/public/images/about-gradient.png";
 import StyledAboutSection from "./HomeAbout.style";
-import Button from "@/app/components/Button/Button";
+import Button from "@/components/Button/Button";
 
 export default function HomeAbout() {
   return (

@@ -12,9 +12,13 @@ export default function ProjectCard({
 }) {
   return (
     <StyledProjectCard>
-      <Image src={image} alt="Project Thumbnail" />
-      <h3>{title}</h3>
-      <p>{description}</p>
+      <div>
+        <Image src={image} alt="Project Thumbnail" />
+      </div>
+      <div>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
     </StyledProjectCard>
   );
 }

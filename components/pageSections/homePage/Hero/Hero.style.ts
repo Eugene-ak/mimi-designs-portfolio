@@ -14,7 +14,7 @@ const StyledHero = styled.section`
 
     &:first-of-type {
       width: 50%;
-      border-radius: 50%;
+      /* border-radius: 50%; */
       margin-top: 3rem;
     }
   }

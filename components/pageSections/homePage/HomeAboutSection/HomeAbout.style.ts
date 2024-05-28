@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledAboutSection = styled.section`
   width: 90%;
-  background: #212121;
+  background: url(/images/about-gradient.png) no-repeat, #212121;
   margin: auto;
   padding: 5rem;
   display: flex;
