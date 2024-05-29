@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const StyledAboutSection = styled.section`
   width: 90%;
-  background: url(/images/about-gradient.png) no-repeat, #212121;
+  background: url(/images/about-gradient.png) no-repeat,
+    url(/images/blob.png) no-repeat bottom right, #212121;
   margin: auto;
   padding: 5rem;
   display: flex;
@@ -11,7 +12,7 @@ const StyledAboutSection = styled.section`
 
   & > div {
     width: 50%;
-    
+
     &:first-of-type {
       display: flex;
       flex-direction: column;
@@ -20,10 +21,10 @@ const StyledAboutSection = styled.section`
 
     &:first-of-type > div > h1 {
       font-size: 3rem;
-      color: #A1A1A1;
+      color: #a1a1a1;
       letter-spacing: 0.2rem;
     }
-    
+
     &:first-of-type > div > h2 {
       letter-spacing: 0.1rem;
     }
@@ -31,7 +32,7 @@ const StyledAboutSection = styled.section`
     &:first-of-type > p {
       font-size: 1.1rem;
       line-height: 1.8;
-      color: #B0ADAD;
+      color: #b0adad;
     }
 
     &:first-of-type > button {
@@ -52,6 +53,7 @@ const StyledAboutSection = styled.section`
     &:last-of-type > img {
       width: 100%;
       height: 100%;
+      /* height: auto; */
     }
   }
 `;

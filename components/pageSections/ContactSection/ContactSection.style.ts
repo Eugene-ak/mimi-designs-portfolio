@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 const StyledContactSection = styled.section`
-  width: 40%;
+  width: 50%;
   margin: auto;
-  padding: 4rem;
+  padding: 8rem 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 
   & > h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 300;
   }
 
@@ -19,7 +19,7 @@ const StyledContactSection = styled.section`
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    gap: 1rem;
+    gap: 1.5rem;
 
     & > #email {
       text-align: center;

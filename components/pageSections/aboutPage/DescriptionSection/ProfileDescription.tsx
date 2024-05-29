@@ -1,9 +1,11 @@
 import Image from "next/image";
-import HeroImage from "@/public/images/heroImage.png";
+// import HeroImage from "@/public/images/heroImage.png";
+import HeroImage from "@/public/images/hero-background.png";
+import StyledDescSection from "./ProfileDescription.style";
 
 export default function ProfileDescription() {
   return (
-    <section>
+    <StyledDescSection>
       <Image src={HeroImage} alt="Profile" />
       <div>
         <p>
@@ -33,6 +35,6 @@ export default function ProfileDescription() {
           experiences, arouse feelings, and above all design dreams.
         </p>
       </div>
-    </section>
+    </StyledDescSection>
   );
 }
