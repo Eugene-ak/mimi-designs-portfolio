@@ -18,6 +18,11 @@ export default function HomeTestimonials() {
         <TestimonialCard />
         <TestimonialCard />
       </Cards>
+      <Cards>
+        <TestimonialCard />
+        <TestimonialCard />
+        <TestimonialCard />
+      </Cards>
       <div>
         <span className="ribbons"></span>
         <span className="ribbons"></span>

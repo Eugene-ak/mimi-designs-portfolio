@@ -15,7 +15,7 @@ const StyledTestimonialSection = styled.section`
   }
 
   & > p {
-    font-size: .85rem;
+    font-size: 0.85rem;
     width: 60%;
     text-align: center;
     font-weight: 100;
@@ -29,11 +29,29 @@ const StyledTestimonialSection = styled.section`
 `;
 
 export const Cards = styled.div`
+  /* width: max-content; */
   display: flex;
+  /* display: inline-flex; */
+  align-self: flex-start;
   gap: 1.5rem;
   margin-top: 5rem;
   margin-bottom: 2rem;
   overflow-x: hidden;
+  /* animation: slide 10s linear infinite; */
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  &:hover {
+    animation-play-state: paused;
+  }
 `;
 
 export default StyledTestimonialSection;

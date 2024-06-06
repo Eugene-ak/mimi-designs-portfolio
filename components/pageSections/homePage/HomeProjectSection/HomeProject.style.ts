@@ -14,10 +14,17 @@ const StyledProjectSection = styled.section`
   }
 
   & > div {
-    margin: 2rem 0;
+    width: 85%;
+    margin: 2rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
     gap: 2rem;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
   }
 `;
 

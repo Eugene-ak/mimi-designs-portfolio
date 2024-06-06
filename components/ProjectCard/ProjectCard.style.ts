@@ -1,12 +1,17 @@
 import styled from "styled-components";
 
 const StyledProjectCard = styled.div`
-  width: 25rem;
+  width: 90%;
+  /* max-width: 25rem; */
   background: #212121;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 900px) {
+    width: 80%;
+  }
 
   & > div:first-of-type > img {
     width: 100%;
