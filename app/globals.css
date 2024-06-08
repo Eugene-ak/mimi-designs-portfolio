@@ -16,6 +16,7 @@ html {
 body {
   background: var(--app-bg);
   color: var(--text-color);
+  font-size: clamp(1rem, 5vw, 2rem);
 }
 
 .colored-text {
@@ -23,7 +24,7 @@ body {
 }
 
 .large-heading {
-  font-size: 3rem;
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: 600;
   color: #a1a1a1;
   letter-spacing: 0.2rem;

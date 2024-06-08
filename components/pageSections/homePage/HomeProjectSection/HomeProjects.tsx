@@ -3,13 +3,39 @@ import Project1 from "@/public/images/project1.jpg";
 import Project2 from "@/public/images/project2.jpg";
 import Project3 from "@/public/images/project3.jpg";
 import Project4 from "@/public/images/project4.jpg";
-import StyledProjectSection from "./HomeProject.style";
 import Button from "@/components/Button/Button";
+import styled from "styled-components";
+
+const StyledProjectSection = styled.section`
+  width: 100%;
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > h2 {
+    /* font-size: clamp; */
+  }
+
+  & > div {
+    width: 85%;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 2rem;
+
+    @media screen and (max-width: 900px) {
+      grid-template-columns: 1fr;
+    }
+  }
+`;
 
 export default function HomeProjects() {
   return (
     <StyledProjectSection>
-      <h1>Recent Projects</h1>
+      <h1 className="large-heading">Recent Projects</h1>
       <h2>
         Explore some of my <span className="colored-text">recent projects</span>
       </h2>
