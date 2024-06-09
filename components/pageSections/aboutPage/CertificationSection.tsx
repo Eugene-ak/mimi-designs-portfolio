@@ -1,9 +1,22 @@
-import EducationCard from "../../../EducationCard/EducationCard";
+import EducationCard from "../../EducationCard";
 import UG from "@/public/icons/ug.png";
 import Udemy from "@/public/icons/udemy.png";
-import StyledCertSection from "./CertificationSection.style";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons"
+import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
+import styled from "styled-components";
+
+const StyledCertSection = styled.section`
+  width: 100%;
+  padding: 5rem clamp(1rem, 10vw, 10rem);
+  background: url(/images/testimonials-bg.png);
+
+  & > div {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+`;
 
 export default function CertificationSection() {
   return (

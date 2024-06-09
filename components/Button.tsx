@@ -9,4 +9,6 @@ const StyledButton = styled.button`
   padding: 1rem;
 `;
 
-export default StyledButton;
+export default function Button({ text }: { text: string }) {
+  return <StyledButton>{text}</StyledButton>;
+}

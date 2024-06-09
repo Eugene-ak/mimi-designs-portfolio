@@ -1,6 +1,7 @@
 "use client";
 
-import ProjectCard from "@/components/ProjectCard/ProjectCard";
+import ContactSection from "@/components/ContactSection";
+import ProjectCard from "@/components/ProjectCard";
 import Project1 from "@/public/images/project1.jpg";
 import Project2 from "@/public/images/project2.jpg";
 import Project3 from "@/public/images/project3.jpg";
@@ -76,6 +77,7 @@ export default function ResumePage() {
           description="UI/UX Design"
         />
       </ProjectContainer>
+      <ContactSection />
     </ResumePageContainer>
   );
 }

@@ -1,0 +1,51 @@
+import Image, { StaticImageData } from "next/image";
+import styled from "styled-components";
+
+const StyledProjectCard = styled.div`
+  width: 90%;
+  background: #212121;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+
+  @media screen and (max-width: 900px) {
+    width: 80%;
+  }
+
+  & > div:first-of-type > img {
+    width: 100%;
+    height: auto;
+  }
+
+  & > div:last-of-type {
+    padding: 1rem;
+
+    & > h3, p {
+      padding: 0.5rem 0;
+    }
+  }
+`;
+
+export default function ProjectCard({
+  image,
+  title,
+  description,
+}: {
+  image: StaticImageData;
+  title: string;
+  description: string;
+}) {
+  return (
+    <StyledProjectCard>
+      <div>
+        <Image src={image} alt="Project Thumbnail" />
+      </div>
+      <div>
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
+    </StyledProjectCard>
+  );
+}

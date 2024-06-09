@@ -1,4 +1,42 @@
-import StyledSkillSection, { StyledSkill } from "./SkillSection.style";
+import styled from "styled-components";
+
+const StyledSkillSection = styled.section`
+  padding: clamp(1rem, 5vw, 5rem);
+  background: #e8e8e8;
+  color: var(--app-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  & > h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  & > p {
+    padding: 0 clamp(1rem, 10vw, 8rem);
+    text-align: center;
+    font-weight: 600;
+  }
+
+  & > div {
+    padding: 0 clamp(1rem, 10vw, 8rem);
+    margin: 1.5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+`;
+
+const StyledSkill = styled.div`
+  padding: 0.3rem;
+  border: 1px solid;
+  border-image: linear-gradient(to right, purple, orange, purple) 1;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+`;
 
 export default function SkillsSection() {
   return (

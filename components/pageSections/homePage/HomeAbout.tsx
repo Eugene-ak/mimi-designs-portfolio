@@ -1,6 +1,6 @@
 import Image from "next/image";
 import AboutImage from "@/public/images/aboutImage.jpg";
-import Button from "@/components/Button/Button";
+import Button from "@/components/Button";
 import styled from "styled-components";
 
 const StyledAboutSection = styled.section`
@@ -20,6 +20,12 @@ const StyledAboutSection = styled.section`
       display: flex;
       flex-direction: column;
       gap: 2rem;
+
+      @media screen and (max-width: 1130px) {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+      }
     }
 
     &:first-of-type > div > h2 {
@@ -47,28 +53,24 @@ const StyledAboutSection = styled.section`
       border-bottom-left-radius: 8rem;
       overflow: hidden;
 
+      @media screen and (max-width: 1130px) {
+        display: none;
+      }
+
       & > img {
         width: 100%;
         height: 100%;
         /* height: auto; */
       }
     }
-
-    @media screen and (max-width: 1130px) {
-      &:first-of-type {
-        width: 100%;
-        text-align: center;
-        align-items: center;
-      }
-
-      &:last-of-type {
-        display: none;
-      }
-    }
   }
 
   @media screen and (max-width: 550px) {
     padding: 3rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 1rem;
   }
 `;
 

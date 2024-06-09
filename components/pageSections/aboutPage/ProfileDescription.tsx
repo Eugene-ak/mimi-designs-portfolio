@@ -1,7 +1,30 @@
 import Image from "next/image";
-// import HeroImage from "@/public/images/heroImage.png";
 import HeroImage from "@/public/images/hero-background.png";
-import StyledDescSection from "./ProfileDescription.style";
+import styled from "styled-components";
+
+const StyledDescSection = styled.section`
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: url(/images/gradient2.png) no-repeat, url(/images/blob.png) no-repeat bottom right, #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+
+  & > img {
+    width: 15rem;
+    height: auto;
+  }
+
+  & > div {
+    padding: 2rem clamp(1rem, 10vw, 10rem);
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+`;
 
 export default function ProfileDescription() {
   return (

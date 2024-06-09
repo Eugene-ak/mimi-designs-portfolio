@@ -8,7 +8,6 @@ const StyledHero = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 2rem;
 
   & > img {
     width: 45%;

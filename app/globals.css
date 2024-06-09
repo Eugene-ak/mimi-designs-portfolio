@@ -16,7 +16,7 @@ html {
 body {
   background: var(--app-bg);
   color: var(--text-color);
-  font-size: clamp(1rem, 5vw, 2rem);
+  font-size: clamp(.8rem, 2vw, 1rem);
 }
 
 .colored-text {

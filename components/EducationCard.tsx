@@ -1,10 +1,15 @@
+import Image, { StaticImageData } from "next/image";
+import { ReactNode } from "react";
 import styled from "styled-components";
 
 const StyledEducationCard = styled.div`
   display: grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: auto 90%;
+  gap: .5rem;
 
   & > img {
+    width: auto;
+    height: 100%;
     grid-area: 1 / 1 / 3 / 2;
   }
 
@@ -43,4 +48,23 @@ const StyledEducationCard = styled.div`
   }
 `;
 
-export default StyledEducationCard;
+export default function EducationCard({
+  image,
+  title,
+  institution,
+  children,
+}: {
+  image: StaticImageData;
+  title: string;
+  institution: string;
+  children: ReactNode;
+}) {
+  return (
+    <StyledEducationCard>
+      <Image src={image} alt="badge" />
+      <h3>{title}</h3>
+      <h4>{institution}</h4>
+      {children}
+    </StyledEducationCard>
+  );
+}

@@ -1,9 +1,9 @@
-import ProjectCard from "../../../ProjectCard/ProjectCard";
+import ProjectCard from "../../ProjectCard";
 import Project1 from "@/public/images/project1.jpg";
 import Project2 from "@/public/images/project2.jpg";
 import Project3 from "@/public/images/project3.jpg";
 import Project4 from "@/public/images/project4.jpg";
-import Button from "@/components/Button/Button";
+import Button from "@/components/Button";
 import styled from "styled-components";
 
 const StyledProjectSection = styled.section`
@@ -13,8 +13,8 @@ const StyledProjectSection = styled.section`
   flex-direction: column;
   align-items: center;
 
-  & > h2 {
-    /* font-size: clamp; */
+  & > h1, h2 {
+    text-align: center;
   }
 
   & > div {

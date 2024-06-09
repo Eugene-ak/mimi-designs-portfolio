@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledContactSection = styled.section`
-  width: 50%;
+  width: 100%;
   margin: auto;
   padding: 8rem 4rem;
   display: flex;
@@ -9,9 +9,13 @@ const StyledContactSection = styled.section`
   align-items: center;
   gap: 3rem;
 
+  @media screen and (max-width: 600px) {
+    padding: 8rem 0;
+  }
+
   & > h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: 300;
   }
 
@@ -20,6 +24,13 @@ const StyledContactSection = styled.section`
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
     gap: 1.5rem;
+
+    @media screen and (max-width: 480px) {
+      & > * {
+        width: 100%;
+        justify-self: center;
+      }
+    }
 
     & > #email {
       text-align: center;
@@ -60,4 +71,16 @@ const StyledContactSection = styled.section`
   }
 `;
 
-export default StyledContactSection;
+export default function ContactSection() {
+  return (
+    <StyledContactSection>
+      <h1>Interested in<br /> working with <span className="colored-text">me</span>?</h1>
+      <form action="">
+        <input id="email" type="text" placeholder="Your email" />
+        <input id="name" type="text" placeholder="Your name" />
+        <input id="message" type="text" placeholder="Your message" />
+        <input id="submit" type="submit" value="Send" />
+      </form>
+    </StyledContactSection>
+  );
+}
