@@ -6,15 +6,19 @@ import ToolStackSection from '@/components/pageSections/aboutPage/ToolStackSecti
 import SkillsSection from '@/components/pageSections/aboutPage/SkillsSection'
 import CertificationSection from '@/components/pageSections/aboutPage/CertificationSection'
 import ContactSection from '@/components/ContactSection'
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export default function AboutPage() {
   return (
     <>
+      <Header />
       <ProfileDescription />
       <ToolStackSection />
       <SkillsSection />
       <CertificationSection />
       <ContactSection />
+      <Footer />
     </>
   )
 }
