@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import LinkedIn from "@/public/icons/linkedIn.png";
-import Behance from "@/public/icons/behance.png";
-import Mail from "@/public/icons/mail.png";
-import WhatsApp from "@/public/icons/whatsApp.png";
+import LinkedIn from "@/public/icons/linkedIn.svg";
+import Behance from "@/public/icons/behance.svg";
+import Mail from "@/public/icons/mail.svg";
+import WhatsApp from "@/public/icons/whatsApp.svg";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
