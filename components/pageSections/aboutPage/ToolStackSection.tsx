@@ -19,7 +19,6 @@ const StyledToolSection = styled.section`
   & > div {
     width: clamp(20rem, 80%, 25rem);
     margin: 2rem 0;
-    /* align-self: center; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
