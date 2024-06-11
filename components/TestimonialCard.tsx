@@ -5,9 +5,9 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 import styled from "styled-components";
 
 const StyledTestimonialCard = styled.div`
-  background: #212121;
+  background: url(/images/quotes.png) no-repeat top right, #212121;
   width: 40rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -18,8 +18,18 @@ const StyledTestimonialCard = styled.div`
     align-items: center;
     gap: .5rem;
 
+    &:first-of-type {
+      display: grid;
+      grid-template-columns: auto 90%;
+    }
+
     & > img {
       border-radius: 50%;
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    & > svg {
+      fill: var(--styled-text);
     }
 
     & > svg > path {

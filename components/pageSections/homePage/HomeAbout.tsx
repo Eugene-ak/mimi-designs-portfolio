@@ -13,6 +13,15 @@ const StyledAboutSection = styled.section`
   gap: 3rem;
   border-radius: 20px;
 
+  @media screen and (max-width: 650px) {
+    padding: 3rem;
+    background: none;
+  }
+
+  @media screen and (max-width: 420px) {
+    padding: 1rem;
+  }
+
   & > div {
     width: 50%;
 
@@ -63,14 +72,6 @@ const StyledAboutSection = styled.section`
         /* height: auto; */
       }
     }
-  }
-
-  @media screen and (max-width: 550px) {
-    padding: 3rem;
-  }
-
-  @media screen and (max-width: 420px) {
-    padding: 1rem;
   }
 `;
 

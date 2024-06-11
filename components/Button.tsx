@@ -7,6 +7,10 @@ const StyledButton = styled.button`
   background: transparent;
   border: 1px solid var(--text-color);
   padding: 1rem;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export default function Button({ text }: { text: string }) {

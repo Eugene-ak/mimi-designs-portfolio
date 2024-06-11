@@ -10,6 +10,7 @@ const StyledContactSection = styled.section`
   gap: 3rem;
 
   @media screen and (max-width: 600px) {
+    width: 90%;
     padding: 8rem 0;
   }
 
@@ -39,6 +40,11 @@ const StyledContactSection = styled.section`
       background: transparent;
       padding: 1rem;
       border: 1px solid white;
+
+      &:focus-visible {
+        outline: none;
+        border-color: var(--styled-text);
+      }
     }
 
     & > #name {
@@ -48,6 +54,11 @@ const StyledContactSection = styled.section`
       background: transparent;
       padding: 1rem;
       border: 1px solid white;
+
+      &:focus-visible {
+        outline: none;
+        border-color: var(--styled-text);
+      }
     }
 
     & > #message {
@@ -57,6 +68,11 @@ const StyledContactSection = styled.section`
       background: transparent;
       padding: 1rem;
       border: 1px solid white;
+
+      &:focus-visible {
+        outline: none;
+        border-color: var(--styled-text);
+      }
     }
 
     & > #submit {
@@ -74,7 +90,10 @@ const StyledContactSection = styled.section`
 export default function ContactSection() {
   return (
     <StyledContactSection>
-      <h1>Interested in<br /> working with <span className="colored-text">me</span>?</h1>
+      <h1>
+        Interested in
+        <br /> working with <span className="colored-text">me</span>?
+      </h1>
       <form action="">
         <input id="email" type="text" placeholder="Your email" />
         <input id="name" type="text" placeholder="Your name" />

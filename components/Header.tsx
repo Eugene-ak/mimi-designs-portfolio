@@ -9,12 +9,17 @@ import styled from "styled-components";
 
 const StyledHeader = styled.header`
   width: 100%;
-  height: max-content;
+  /* height: max-content; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0rem 2rem;
   background: #292c36;
+
+  & > img {
+    width: clamp(4rem, 10%, 7rem);
+    height: auto;
+  }
 `;
 
 const StyledNav = styled.nav`
@@ -53,7 +58,7 @@ const MobileNav = styled.nav`
   }
 
   & > svg {
-    width: 2rem;
+    width: 1.2rem;
     height: auto;
   }
 `;
