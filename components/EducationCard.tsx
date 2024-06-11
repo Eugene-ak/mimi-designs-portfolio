@@ -3,13 +3,14 @@ import { ReactNode } from "react";
 import styled from "styled-components";
 
 const StyledEducationCard = styled.div`
+  width: 100%;
   display: grid;
-  grid-template-columns: auto 90%;
+  grid-template-columns: 1fr 8fr;
   gap: .5rem;
 
   & > img {
-    width: clamp(5rem, 10vw, 10rem);
-    height: 100%;
+    width: clamp(3rem, 10vw, 10rem);
+    height: auto;
     grid-area: 1 / 1 / 3 / 2;
   }
 

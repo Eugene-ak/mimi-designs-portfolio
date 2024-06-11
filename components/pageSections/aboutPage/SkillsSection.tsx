@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 const StyledSkillSection = styled.section`
+  width: 100%;
   padding: clamp(1rem, 5vw, 5rem);
   background: #e8e8e8;
   color: var(--app-bg);
