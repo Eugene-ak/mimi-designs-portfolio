@@ -12,6 +12,7 @@ const StyledFooter = styled.footer`
   padding: 1rem;
 
   & > ul {
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
