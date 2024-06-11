@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const StyledContactSection = styled.section`
   width: 100%;
-  height: 90vh;
+  height: 45rem;
   margin: auto;
   padding: 8rem 4rem;
   display: flex;
