@@ -17,15 +17,16 @@ const StyledToolSection = styled.section`
   align-items: center;
 
   & > div {
-    width: 60%;
+    width: clamp(20rem, 80%, 25rem);
     margin: 2rem 0;
-    align-self: center;
+    /* align-self: center; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     
     & > div {
-      width: clamp(5rem, 10%, 10rem);
+      width: clamp(4rem, 10%, 10rem);
       height: max-content;
       padding: 1rem;
       background: white;
