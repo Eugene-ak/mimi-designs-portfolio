@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 const StyledCertSection = styled.section`
   width: 100%;
-  padding: 5rem clamp(1rem, 10vw, 10rem);
+  padding: 5rem clamp(1rem, 2vw, 5rem);
   background: url(/images/testimonials-bg.png);
 
   & > div {

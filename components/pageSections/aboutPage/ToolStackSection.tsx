@@ -1,23 +1,41 @@
 import Image from "next/image";
-import Photoshop from "@/public/icons/photoshop.jpg";
-import Figma from "@/public/icons/figma.jpg";
-import Html5 from "@/public/icons/html5.jpg";
-import Css3 from "@/public/icons/css3.jpg";
-import Adobexd from "@/public/icons/adobexd.jpg";
-import Javascript from "@/public/icons/javascript.jpg";
+import Photoshop from "@/public/icons/photoshop.png";
+import Figma from "@/public/icons/figma.png";
+import Html5 from "@/public/icons/html-5.png";
+import Css3 from "@/public/icons/css-3.png";
+import Adobexd from "@/public/icons/xd.png";
+import Trello from "@/public/icons/trello.png";
+import Slack from "@/public/icons/slack.png";
+import Javascript from "@/public/icons/js.png";
 import styled from "styled-components";
 
 const StyledToolSection = styled.section`
+  width: 100%;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   & > div {
+    width: 60%;
     margin: 2rem 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+    & > div {
+      width: clamp(5rem, 10%, 10rem);
+      height: max-content;
+      padding: 1rem;
+      background: white;
+      border-radius: 20px;
+
+      & > img {
+        width: 100%;
+        height: auto;
+      }
+    }
   }
 `;
 
@@ -39,16 +57,16 @@ export default function ToolStackSection() {
           <Image src={Html5} alt="Tool icon" />
         </div>
         <div>
-          <Image src={Html5} alt="Tool icon" />
-        </div>
-        <div>
           <Image src={Css3} alt="Tool icon" />
         </div>
         <div>
           <Image src={Adobexd} alt="Tool icon" />
         </div>
         <div>
-          <Image src={Javascript} alt="Tool icon" />
+          <Image src={Trello} alt="Tool icon" />
+        </div>
+        <div>
+          <Image src={Slack} alt="Tool icon" />
         </div>
         <div>
           <Image src={Javascript} alt="Tool icon" />

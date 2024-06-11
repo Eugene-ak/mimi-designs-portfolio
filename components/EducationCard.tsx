@@ -8,7 +8,7 @@ const StyledEducationCard = styled.div`
   gap: .5rem;
 
   & > img {
-    width: auto;
+    width: clamp(5rem, 10vw, 10rem);
     height: 100%;
     grid-area: 1 / 1 / 3 / 2;
   }
