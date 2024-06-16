@@ -61,7 +61,7 @@ export default function HomeProjects() {
           description="UI/UX Design"
         />
       </div>
-      <Button text="View All Works" />
+      <Button text="View All Works" href="resume" />
     </StyledProjectSection>
   );
 }

@@ -91,12 +91,12 @@ export default function HomeAbout() {
           stunning designs that effectively communicate messages. With a strong
           work ethic, attention to detail, and a collaborative mindset, I thrive
           in team environments and I’m eager to contribute my creativity and
-          expertise. Learn More
+          expertise.
         </p>
-        <Button text="Learn More" />
+        <Button text="Learn More" href="about" />
       </div>
       <div>
-        <Image src={AboutImage} alt="About" />
+        <Image src={AboutImage} alt="About" quality={100} placeholder="blur" />
       </div>
     </StyledAboutSection>
   );

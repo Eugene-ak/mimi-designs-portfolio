@@ -14,12 +14,11 @@ import { useRef } from "react";
 
 const StyledHeader = styled.header`
   width: 100%;
-  /* height: max-content; */
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0rem 2rem;
-  background: #292c36;
+  background: #212121;
 
   & > img {
     width: clamp(4rem, 10%, 7rem);

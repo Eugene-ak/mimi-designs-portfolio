@@ -23,8 +23,8 @@ const StyledHero = styled.section`
 export default function Hero() {
   return (
     <StyledHero>
-      <Image src={HeroImage} alt="Profile" />
-      <Image src={NameAndTitle} alt="Profile" />
+      <Image src={HeroImage} alt="Profile" quality={100} placeholder="blur" />
+      <Image src={NameAndTitle} alt="Profile" quality={100} placeholder="blur" />
     </StyledHero>
   )
 }

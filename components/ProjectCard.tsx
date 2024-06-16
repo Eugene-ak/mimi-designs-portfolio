@@ -8,7 +8,12 @@ const StyledProjectCard = styled.div`
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  /* flex-wrap: wrap; */
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: .3s;
+  }
 
   @media screen and (max-width: 900px) {
     width: 80%;
