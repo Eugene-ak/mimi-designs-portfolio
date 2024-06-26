@@ -2,7 +2,7 @@ import Image, { StaticImageData } from "next/image";
 import styled from "styled-components";
 
 const StyledProjectCard = styled.div`
-  width: 90%;
+  width: 100%;
   background: #212121;
   border-radius: 20px;
   overflow: hidden;
@@ -11,12 +11,12 @@ const StyledProjectCard = styled.div`
   transition: .3s;
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: .3s;
   }
 
   @media screen and (max-width: 900px) {
-    width: 80%;
+    width: 100%;
   }
 
   & > div:first-of-type > img {

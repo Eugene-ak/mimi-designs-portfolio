@@ -6,7 +6,8 @@ import styled from "styled-components";
 
 const StyledTestimonialCard = styled.div`
   background: url(/images/quotes.png) no-repeat top right, #212121;
-  width: 40rem;
+  width: 100%;
+  /* min-width: 20rem; */
   padding: 1rem;
   border-radius: 10px;
   display: flex;

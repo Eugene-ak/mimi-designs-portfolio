@@ -14,6 +14,7 @@ import styled from "styled-components";
 
 const ResumePageContainer = styled.section`
   width: 100%;
+  margin: 7.1rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;

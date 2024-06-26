@@ -1,6 +1,7 @@
 import Image from "next/image";
 import HeroImage from "@/public/images/hero-background.png";
 import NameAndTitle from "@/public/images/nameAndTitle.png";
+import MobileNameAndTitle from "@/public/images/mobileName&Title.png";
 import styled from "styled-components";
 
 const StyledHero = styled.section`

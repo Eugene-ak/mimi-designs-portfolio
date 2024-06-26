@@ -8,7 +8,7 @@ import WhatsApp from "@/public/icons/whatsApp.svg";
 import styled from "styled-components";
 
 const StyledFooter = styled.footer`
-  background: #333333;
+  background: #212121;
   padding: 1rem;
 
   & > ul {
@@ -17,6 +17,14 @@ const StyledFooter = styled.footer`
     align-items: center;
     justify-content: center;
     gap: 1rem;
+
+    & > img {
+      width: 3rem;
+
+      @media screen and (max-width: 800px) {
+        width: 1.67rem;
+      }
+    }
   }
 `;
 
