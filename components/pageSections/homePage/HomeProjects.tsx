@@ -44,21 +44,25 @@ export default function HomeProjects() {
           image={Project1}
           title="Item Flipper App Design"
           description="UI/UX Design"
+          href="https://www.behance.net/gallery/191152017/Item-Flipper-App-UIUX"
         />
         <ProjectCard
           image={Project2}
           title="Web App For A Beverage Company"
           description="UI/UX Design"
+          href="https://www.behance.net/gallery/192421043/Shallom-Edibles-Landing-page"
         />
         <ProjectCard
           image={Project3}
           title="AskPBS Website Design"
           description="UI/UX Design"
+          href="https://www.behance.net/gallery/192710957/AskPBS-Website-Landing-Page"
         />
         <ProjectCard
           image={Project4}
-          title="Dumpinn LAnding Page Design"
+          title="Dumpinn Landing Page Design"
           description="UI/UX Design"
+          href="https://www.behance.net/gallery/192302775/Dumpinn-Landing-Page-Design"
         />
       </div>
       <Button text="View All Works" href="resume" />

@@ -141,7 +141,7 @@ export default function Header() {
             <Link href="about">About</Link>
           </li>
           <li>
-            <Link href="resume">Resume</Link>
+            <Link href="projects">Projects</Link>
           </li>
           <li>
             <Link href="contact">Contact</Link>
