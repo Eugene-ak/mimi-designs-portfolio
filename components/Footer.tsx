@@ -16,10 +16,10 @@ const StyledFooter = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 
-    & > img {
-      width: 3rem;
+    & img {
+      width: 2.5rem;
 
       @media screen and (max-width: 800px) {
         width: 1.67rem;
@@ -32,11 +32,19 @@ export default function Footer() {
   return (
     <StyledFooter>
       <ul>
-        <Image src={LinkedIn} alt="linkedIn" />
-        <Image src={Behance} alt="behance" />
-        <Image src={Mail} alt="mail" />
-        <Image src={WhatsApp} alt="whatsApp" />
+        <a href="https://www.linkedin.com/in/miriam-asante-909851243/">
+          <Image src={LinkedIn} alt="linkedIn" />
+        </a>
+        <a href="https://www.behance.net/MzMimi_designs">
+          <Image src={Behance} alt="behance" />
+        </a>
+        <a href="">
+          <Image src={Mail} alt="mail" />
+        </a>
+        <a href="">
+          <Image src={WhatsApp} alt="whatsApp" />
+        </a>
       </ul>
     </StyledFooter>
-  )
+  );
 }
